@@ -14,7 +14,7 @@ namespace SecretApplication
         {
             using (SqlConnection conn = new SqlConnection())
             {
-                conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=c:\\users\\rvallabhaneni\\source\\repos\\SecretApplication\\SecretApplication\\App_Data\\Database1.mdf;Integrated Security=True";
+                conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\lekshmi\\Hackethon\\Hackathon-QL-18\\SecretApplication\\SecretApplication\\App_Data\\Database1.mdf;Integrated Security=True";
                 string query = "SELECT ID FROM Login WHERE Username = @username";
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.Add(new SqlParameter("username", Session["Username"]));
@@ -51,6 +51,11 @@ namespace SecretApplication
         protected void btnVanpoolPost_Click(object sender, EventArgs e)
         {
             Response.Redirect("PostVanpool.aspx");
+        }
+
+        protected void btnOpenVan_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OpenList.aspx");
         }
     }
 }

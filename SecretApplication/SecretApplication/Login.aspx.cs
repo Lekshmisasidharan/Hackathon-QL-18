@@ -23,7 +23,7 @@ namespace SecretApplication
             Session["Username"] = Username;
             using (SqlConnection conn = new SqlConnection())
             {
-                conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=c:\\users\\rvallabhaneni\\source\\repos\\SecretApplication\\SecretApplication\\App_Data\\Database1.mdf;Integrated Security=True";
+                conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\lekshmi\\Hackethon\\Hackathon-QL-18\\SecretApplication\\SecretApplication\\App_Data\\Database1.mdf;Integrated Security=True";
                 string query = "SELECT count(*) FROM Login WHERE Username = @username AND Password = @password";
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.Add(new SqlParameter("username", Username));

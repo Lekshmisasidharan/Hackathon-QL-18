@@ -13,5 +13,9 @@ namespace SecretApplication
         {
 
         }
+        protected void btnsubmitMessagePost_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }

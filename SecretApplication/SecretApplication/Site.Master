@@ -1,12 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SecretApplication.SiteMaster" %>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Vanpool Application</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -37,45 +36,48 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="container-fluid">
+        <header>
+        <%--<div id="navbar" class="container-fluid">--%>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">VRide</a>
+                <div id="navbar" class="container-fluid">
+                <div><a class="navbar-brand" href="Default.aspx">WeRide</a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                    <ul id="nav-list" class="nav navbar-nav mr-auto">
+                        <li class="nav-item visible-xs active">
                             <a class="nav-link" href="Default.aspx">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About</a>
+                            <a class="nav-link" href="About.aspx">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="Contact.aspx">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="Contact.aspx"></a>
                         </li>
                     </ul>
-                    <%--<form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>--%>
                 </div>
+                    </div>
             </nav>
-        </div>
-        <div class="container body-content">
+        <%--</div>--%>
+            </header>
+
+
+        <div class="container-fluid body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
         </div>
-
+        
+            <%--<footer id="myfooter" class="panel-footer text-center">
+                <div class="container">
+                <p>&copy; <%: DateTime.Now.Year %> - Vanpool Application</p>
+                <span id="mailto">Reach Us at: </span><a style="color:#2196f3" href="mailto:lekshmiajith11@gmail.com">info@VRide.com</a>
+                </div>
+            </footer>--%>
     </form>
 </body>
 </html>

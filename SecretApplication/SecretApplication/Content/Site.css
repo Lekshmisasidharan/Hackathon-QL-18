@@ -1,8 +1,43 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    background: url("../images//pexels-photo-1280.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: black;
+    font-size: 14px;
 }
+/*#layoutimg {
+    background: url("../images//car-1284040_1280.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: black;
+    font-size: 14px;
+}*/
+
+.container {
+    padding:15px;
+}
+
+#navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    padding-left: 25px;
+    /*font-family: fantasy;*/
+}
+
+#nav-list {
+    margin-left: 900px;
+}
+
+#nav-list li a {
+    font-size: 20px;
+}
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -19,6 +54,91 @@ textarea {
     max-width: 280px;
 }
 
+.row {
+    padding:10px;
+}
+
+#login-form {
+    background-color: #fff;
+    color: black;
+    font-size:19px;
+    background:rgb(255,255,255);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#login-content {
+    /*opacity:.5;*/
+    background: rgb(76, 175, 80);
+    background: rgba(76, 175, 80, 0.1);
+    font-weight:bold;
+    margin-top:30px;
+    /*background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;*/
+}
+
+.button {
+    align-content:center;
+}
+#welcome-user {
+    margin-top: 30px;
+    padding: 90px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.3);
+    color:#fff;
+}
+
+/*#contact-us {
+    padding-top: 100px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}*/
+
+#contact-form {
+    font-size: 19px;
+    margin-top: 30px;
+    color: black;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#about-us {
+    margin-top: 40px;
+    font-size: 15px;
+    color: black;
+    text-indent:35px;
+    text-justify:auto;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#faq-section ul {
+    text-decoration:none;
+}
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+footer p {
+    padding-top:20px;
+    color: #fff;
+}
+
+#mailto {
+    color: #fff;
+    text-decoration: none;
+    font-size:12px;
+}
+
+#post-vanpool {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.3);
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -30,3 +150,35 @@ textarea {
         padding: 0;
     }
 }
+
+/*/********** Large devices only **********/
+@media (min-width: 990px) and (max-width: 1300px) {
+    #nav-list {
+        margin-left: 600px;
+        text-align:right;
+    }
+}
+
+/********** Medium devices only **********/
+/*@media (max-width: 766px) {
+    body {
+        background: url("../images//pexels-photo-640.jpeg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        color: black;
+        font-size: 18px;
+    }*/
+/*}*/
+
+/********** Small devices only **********/
+/*@media (min-width: 767px) and (max-width: 1300px) {
+    body {
+        background: url("../images//pexels-photo-12801.jpeg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        color: black;
+        font-size: 18px;
+    }
+}*/
